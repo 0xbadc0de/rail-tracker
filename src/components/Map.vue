@@ -3,9 +3,9 @@
 </template>
 
 <script>
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-import "leaflet-osm"
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+import '@/utils/leaflet-osm'
 import axios from 'axios'
 
 export default {

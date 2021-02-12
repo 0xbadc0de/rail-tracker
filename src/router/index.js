@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import store from '@/store';
 import PageNotFound from '@/views/errors/PageNotFound';
+import Login from '@/views/Login';
 
 const routes = [
   {
@@ -21,10 +22,10 @@ const routes = [
         component: () => import('../views/Home')
       },
       {
-        path: '',
+        path: 'login',
         name: 'Login',
         meta: { skipAuthorized: true },
-        component: () => import('../views/Login')
+        component: () => Login
       },
       {
         path: 'about',
