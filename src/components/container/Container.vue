@@ -5,7 +5,7 @@
       <Header/>
       <div class="c-body">
         <main class="c-main">
-          <div class="container-fluid">
+          <div class="container-fluid" v-on:click.prevent>
             <router-view v-slot="{ Component }" :key="$route.path">
               <transition>
                 <component :is="Component" />

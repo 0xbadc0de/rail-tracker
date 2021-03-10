@@ -1,5 +1,4 @@
 import { createApp } from 'vue'
-import Vuex from 'vuex'
 import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
@@ -47,7 +46,7 @@ const toastOptions = {
 createApp(App)
     .use(i18n)
     .use(router)
-    .use(Vuex)
+
     .use(store)
     .use(Toast, toastOptions)
     .component('font-awesome-icon', FontAwesomeIcon)
